@@ -10,13 +10,9 @@ public class Paciente {
 
     public Paciente () {}
 
-    public Paciente(String nome, int idade, SexoDoPaciente sexoDoPaciente, TipoDeSangue tipoDeSangue, AlaDoPaciente alaDoPaciente, GravidadeDoPaciente gravidadeDoPaciente) {
+    public Paciente(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
-        this.sexoDoPaciente = sexoDoPaciente;
-        this.tipoDeSangue = tipoDeSangue;
-        this.alaDoPaciente = alaDoPaciente;
-        this.gravidadeDoPaciente = gravidadeDoPaciente;
     }
 
     public void relatorioDoPaciente(){
@@ -24,7 +20,7 @@ public class Paciente {
         System.out.println("Idade do paciente: "+this.idade);
         System.out.println("Sexo do paciente: "+this.sexoDoPaciente.getNome());
         System.out.println("Tipo Sanguineo: "+this.tipoDeSangue.getSangue()+" | Id do Sangue "+this.tipoDeSangue.getId());
-        System.out.println("Ala em que o paciente se encontra: "+this.alaDoPaciente.getAla()+" | Id da Ala"+this.alaDoPaciente.getId());
+        System.out.println("Ala em que o paciente se encontra: "+this.alaDoPaciente.getAla()+" | Id da Ala "+this.alaDoPaciente.getId());
         System.out.println("Gravidade do paciente: "+this.gravidadeDoPaciente.getNome());
     }
 
