@@ -19,6 +19,15 @@ public class Paciente {
         this.gravidadeDoPaciente = gravidadeDoPaciente;
     }
 
+    public void relatorioDoPaciente(){
+        System.out.println("Nome do paciente: "+this.nome);
+        System.out.println("Idade do paciente: "+this.idade);
+        System.out.println("Sexo do paciente: "+this.sexoDoPaciente.getNome());
+        System.out.println("Tipo Sanguineo: "+this.tipoDeSangue.getSangue()+" | Id do Sangue "+this.tipoDeSangue.getId());
+        System.out.println("Ala em que o paciente se encontra: "+this.alaDoPaciente.getAla()+" | Id da Ala"+this.alaDoPaciente.getId());
+        System.out.println("Gravidade do paciente: "+this.gravidadeDoPaciente.getNome());
+    }
+
     public String getNome() {
         return nome;
     }
